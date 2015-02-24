@@ -27,12 +27,13 @@ Get Your App Id And Secret
 
 Open up `index.php` Init class with your app id and app secret
 
-	FacebookSession::setDefaultApplication('APP_ID', 'APP_SECRET');
-	
+```php
+FacebookSession::setDefaultApplication('APP_ID', 'APP_SECRET');
+```	
 Set your callback url containing your website domain in app settings
-	
-	$helper = new FacebookRedirectLoginHelper("YOUR_CALLBACK_URL_HERE");
-
+```php
+$helper = new FacebookRedirectLoginHelper("YOUR_CALLBACK_URL_HERE");
+```
 In our case, we are handling callback in same file. Thats pretty much it! Let me know if any queries.
 
 ## Additional Notes
